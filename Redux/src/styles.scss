@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+ul {
+  padding: 0;
+}
+
+button {
+  cursor: pointer;
+}
+
+button:focus,
+input:focus {
+  outline: none;
+}
+
+* {
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  text-align: center;
+  background: #af2274;
+  color: #fff;
+
+  // TodoAdd
+  form {
+    display: flex;
+    justify-content: center;
+    max-width: 500px;
+    margin: 0 auto;
+
+    input {
+      background: #ffffff61;
+      border: 1px solid #fff;
+      height: 25px;
+      width: 75%;
+      border-radius: 2em 0 0 2em;
+      padding: 0.5em 1em;
+    }
+
+    button {
+      background: #fff;
+      border-radius: 0 2em 2em 0;
+      border: none;
+      width: 25%;
+      padding: 0.5em 1em;
+    }
+  }
+
+  // TodoItem
+  li {
+    display: flex;
+    // justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #fff;
+    padding: 1em;
+    cursor: pointer;
+
+    &:hover {
+      background: #3498db;
+    }
+
+    span {
+      flex: 1;
+      text-align: start;
+    }
+
+    button {
+      color: #e74c3c;
+      border-radius: 1em;
+      padding: 0.5em 1em;
+      margin-left: 1em;
+      border: none;
+      cursor: pointer;
+    }
+
+    input {
+      background: #ffffff61;
+      border: 1px solid #fff;
+      height: 25px;
+      width: 100px;
+      border-radius: 2em;
+      padding: 0.5em 1em;
+    }
+  }
+
+  // Active item panel
+  .active-item {
+    background-color: #6b0852;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 200px;
+    max-width: 700px;
+    margin: 0 auto;
+    margin-top: 5em;
+    border-radius: 1em;
+  }
+}
